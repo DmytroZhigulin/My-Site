@@ -3,7 +3,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     console.log('done');
 
-    document.body.style.overflow = 'hidden';
+    // document.body.style.overflow = 'hidden';
 
     let nav = document.querySelectorAll('.header__nav-item');
     let sections = document.querySelectorAll('section');
