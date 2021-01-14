@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // document.body.style.overflow = 'hidden';
 
-    let nav = document.querySelectorAll('.header__nav-item');
+    let nav = document.querySelectorAll('.aside__nav-item');
     let sections = document.querySelectorAll('section');
 
     //Функция принимает аргумент i, перебирает секции и присваевает им классы
@@ -30,18 +30,24 @@ window.addEventListener('DOMContentLoaded', () => {
             });
          });
 
-         //Анимация для коика по логотипу.
+         //Add animation on logo link.
          let logo = document.querySelector('.header__logo');
          logo.addEventListener('click', () => showDefaultWindow(0));
     }
     showPages();
 
+    //Side menu function
     function test() {
 
-        const aside = document.querySelector('aside');
+        const menuButton = document.querySelector('.aside__menu-button');
+        
+        menuButton.addEventListener('click', (e) => {
 
-        aside.addEventListener('click', (e) => {
-            aside.classList.toggle('open');
+            menuButton.classList.toggle('active');
+            const asideWindow = document.querySelector('.aside');
+            asideWindow.classList.toggle('open');
+            const asideMenu = document.querySelector('.aside__nav');
+            asideMenu.classList.toggle('active');
         });
     }
     test();
