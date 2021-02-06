@@ -224,7 +224,7 @@
 .about__block-content {
   z-index: 3;
   position: relative;
-  padding-top: 12vh;
+  padding: 12vh 0;
 }
 
 .about__block-title {
@@ -595,10 +595,12 @@
 
 .hide {
   opacity: 0%;
+  display: none;
 }
 
 .show {
   opacity: 100%;
+  display: block;
 }
 
 html,
@@ -641,11 +643,8 @@ body {
 }
 
 section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 @media (max-width: 1024px) {
