@@ -100,9 +100,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: auto;
-  position: relative;
   z-index: 1;
 }
 
@@ -206,6 +203,9 @@
 
 .about__block {
   background-image: url(../img/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about__block-shadow {
@@ -247,6 +247,9 @@
 
 .portfolio__block {
   background-image: url(../img/portfolio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio__block-shadow {
@@ -270,6 +273,9 @@
 
 .contacts__block {
   background-image: url(../img/contacts.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__block-shadow {
@@ -653,7 +659,7 @@ section {
   }
 
   .aside__block-links {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .aside__nav-list {
