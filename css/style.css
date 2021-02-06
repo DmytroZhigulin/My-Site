@@ -123,7 +123,7 @@
   height: 100%;
   z-index: 3;
   position: relative;
-  padding: 40vh 0 0 10vh;
+  padding: 350px 0 0 50px;
   font-size: 35px;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .head__content p {
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .head__block-downloadButton {
@@ -445,7 +445,7 @@
 }
 
 .aside__nav {
-  max-width: 145px;
+  max-width: 200px;
   margin: 0 auto;
   display: none;
   opacity: 0;
@@ -605,7 +605,7 @@ html,
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 *,
@@ -646,4 +646,45 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .head__content {
+    padding: 280px 0 0 40px;
+  }
+
+  .aside__block-links {
+    margin-bottom: 20px;
+  }
+
+  .aside__nav-list {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 896px) {
+  .head__content {
+    padding: 150px 0 0 0;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head__content h2 {
+    font-size: 55px;
+  }
+
+  .head__content h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 414px) {
+  .head__content {
+    font-size: 20px;
+  }
+
+  .head__content h2 {
+    font-size: 30px;
+  }
 }
